@@ -263,7 +263,7 @@ body {
 
 /* Section background */
 .section-bg {
-  background: url("assets/images/bg-page-g.png") no-repeat center;
+  background: url("../images/bg-page-g.png") no-repeat center;
   min-height: 600px;
 }
 
