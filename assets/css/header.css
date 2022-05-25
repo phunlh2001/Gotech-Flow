@@ -320,7 +320,7 @@ body {
 .title-content h1 {
   text-transform: uppercase;
   font-size: 5em !important;
-  background-image: url("assets/images/waterImage.png");
+  background-image: url("../images/waterImage.png");
   -webkit-background-clip: text;
   background-size: 60%;
   -webkit-text-fill-color: rgba(255, 255, 255, 0.15);
