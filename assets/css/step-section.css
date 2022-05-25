@@ -106,7 +106,6 @@ section.flow-body .left img {
   margin: 0px -22%;
   animation: animation 3s infinite linear;
   clip-path: inset(0 30% 0 30% round 10px);
-  /* -webkit-clip-path: inset(10px round 80px 20px 30px 10px); */
 }
 
 section.flow-body .left img:nth-child(1) {
@@ -144,7 +143,6 @@ section.flow-body .left img:nth-child(2) {
   height: 56px;
   transform: rotate(-3deg);
   font-family: Montserrat, Arial, sans-serif;
-  /* font-size: 30px; */
   font-weight: bold;
   padding: 15px 40px 15px 30px;
   position: absolute;
