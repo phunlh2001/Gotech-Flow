@@ -29,14 +29,49 @@ section.flow-body .right li {
   top: 42%;
   list-style: none;
   transform-origin: 13rem;
-  transition: 0.8s;
+  transition: 1s;
   transition-delay: calc(0.1s * var(--i));
   transform: rotate(0deg) translate(10rem);
   opacity: 0.09;
+  animation: animateRotate 15s infinite linear;
+  /* -webkit-animation: animateRotate 15s infinite linear; */
+}
+
+section.flow-body .right li:nth-child(1) {
+  animation-delay: 0.1s;
+  opacity: 1;
+}
+section.flow-body .right li:nth-child(2) {
+  animation-delay: 2s;
+  opacity: 1;
+}
+section.flow-body .right li:nth-child(3) {
+  animation-delay: 3.9s;
+  opacity: 1;
+}
+section.flow-body .right li:nth-child(4) {
+  animation-delay: 5.8s;
+  opacity: 1;
+}
+section.flow-body .right li:nth-child(5) {
+  animation-delay: 7.7s;
+  opacity: 1;
+}
+section.flow-body .right li:nth-child(6) {
+  animation-delay: 9.6s;
+  opacity: 1;
+}
+section.flow-body .right li:nth-child(7) {
+  animation-delay: 11.5s;
+  opacity: 1;
+}
+section.flow-body .right li:nth-child(8) {
+  animation-delay: 13.4s;
+  opacity: 1;
 }
 
 section.flow-body .right.active li {
-  transform: rotate(calc(360deg / 8 * var(--i)));
+  transform: rotate(calc(360deg * var(--i)));
   opacity: 1;
 }
 
@@ -52,31 +87,13 @@ section.flow-body .right li a {
   border-radius: 50%;
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
   transition: 0.2s;
-  transform: rotate(calc(360deg / -8 * var(--i)));
+  transform: rotate(calc(360deg * var(--i)));
 }
 
-/* Animation cursor start */
-
-.hover-this {
-  transition: all 0.3s ease;
+.hover-this .circle-a:hover {
+  background: #f39c12;
+  color: #fff;
 }
-
-.cursor {
-  pointer-events: none;
-  position: fixed;
-  padding: 0.3rem;
-  background: var(--white-clr);
-  border-radius: 50%;
-  background-blend-mode: soft-light;
-  transition: all 0.1s ease;
-}
-
-.hover-this:hover ~ .cursor {
-  opacity: 0.6;
-  transform: scale(15);
-}
-
-/* Animation cursor end */
 
 section.flow-body .right .toggle {
   position: absolute;
@@ -116,25 +133,13 @@ section.flow-body .left img:nth-child(2) {
   animation-delay: 1s;
 }
 
-@keyframes animation {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-
 .home-ribbon {
   display: flex;
   position: relative;
   z-index: 10;
-  top: -27rem;
-  left: 19.5rem;
-  transform: rotate(45deg);
+  top: 1rem;
+  right: -80%;
+  transform: rotate(0deg);
   transform-origin: bottom left;
   animation: ribbon-shaking 1.5s ease-in-out infinite;
 }
@@ -167,42 +172,6 @@ section.flow-body .left img:nth-child(2) {
   top: 0;
   z-index: -1;
   border-right: 15px solid transparent;
-}
-
-@keyframes ribbon-shaking {
-  0% {
-    transform: rotate(45deg);
-  }
-  50% {
-    transform: rotate(50deg);
-  }
-  100% {
-    transform: rotate(45deg);
-  }
-}
-
-@keyframes ribbon-shaking2 {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(3deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-@keyframes animatedgradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -265,4 +234,26 @@ section.flow-body .left img:nth-child(2) {
 
 #canvas canvas {
   pointer-events: none;
+}
+
+/* Tooltip */
+
+.notes {
+  height: 15rem;
+  width: 25rem;
+  padding: 3rem;
+  /* border: 1px solid red; */
+  background-image: url("/assets/images/mess_box.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.notes .step-item {
+  color: #fff;
+  height: 10rem;
+  width: 20rem;
+  position: relative;
+  padding: 10px;
+  /* top: -7%; */
 }

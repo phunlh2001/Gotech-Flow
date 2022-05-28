@@ -9,6 +9,7 @@
   --black-clr: #333;
   --blue-clr: #0984e3;
   --blue-cls: #2cccff;
+  --primary-rem: 45rem;
 }
 
 a {
@@ -26,4 +27,106 @@ body {
 #page {
   position: relative;
   width: 100%;
+}
+
+@keyframes ribbon-shaking {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes ribbon-shaking2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes animation {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes animateRotate {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* @-webkit-keyframes animateRotate {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+
+@keyframes tooltip {
+  0% {
+    top: var(--primary-rem);
+  }
+  12.5% {
+    top: calc(var(--primary-rem) - 11.5rem);
+  }
+  25% {
+    top: calc(var(--primary-rem) - 11.5rem * 2);
+  }
+  37.5% {
+    top: calc(var(--primary-rem) - 11.5rem * 3);
+  }
+  50% {
+    top: calc(var(--primary-rem) - 11.5rem * 4);
+  }
+  62.5% {
+    top: calc(var(--primary-rem) - 11.5rem * 5);
+  }
+  75% {
+    top: calc(var(--primary-rem) - 11.5rem * 6);
+  }
+  87.5% {
+    top: calc(var(--primary-rem) - 11.5rem * 7);
+  }
+  100% {
+    top: calc(var(--primary-rem) - 11.5rem * 8);
+  }
 }

@@ -2,9 +2,9 @@ $(function () {
   $(".carousel").slick({
     dots: true,
     infinite: true,
+    speed: 300,
     slidesToShow: 1,
-    draggable: true,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3500,
     cssEase: "linear",
     fade: true,
@@ -17,8 +17,9 @@ $(function () {
         breakpoint: 768,
         settings: {
           arrows: false,
+          draggable: true,
+          false: false,
         },
-        draggable: true,
       },
       {
         breakpoint: 480,
@@ -33,6 +34,27 @@ $(function () {
         },
       },
     ],
+  });
+
+  // $(".notes").slick({
+  //   infinite: true,
+  //   autoplay: true,
+  //   autoplaySpeed: 100,
+  //   cssEase: "linear",
+  //   fade: true,
+  //   vertical: true,
+  //   arrows: false,
+  // });
+  $("#notes").slick({
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    vertical: true,
+    adaptiveHeight: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 1900,
+    // fade: true,
   });
 });
 

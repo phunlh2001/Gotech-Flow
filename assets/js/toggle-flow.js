@@ -1,5 +1,5 @@
 let menu = document.querySelector(".flow-body .right");
-const links = document.querySelectorAll(".hover-this"); //li > a
+const links = document.querySelectorAll(".hover-this"); //li
 const cursor = document.querySelector(".cursor");
 
 // animation circle step
@@ -37,5 +37,17 @@ links.forEach((item) => {
 
 window.addEventListener("mousemove", editCursor);
 
-// click to slide
-links.forEach((item) => {});
+// const active = document.querySelector(".slick-active");
+// let steps = document.querySelectorAll(".step-item");
+// steps.forEach((item) => {
+//   for (let i = 0; i < links.length; i++) {
+//     switch (links[i]) {
+//       case value:
+
+//         break;
+
+//       default:
+//         break;
+//     }
+//   }
+// });

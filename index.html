@@ -128,41 +128,95 @@
         <section class="flow-body">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 left" data-aos="flip-left" data-aos-duration="3000">
-                        <!-- <img src="/assets/images/section-step.jpg" alt="" /> -->
-                        <img src="assets/images/wl1.jpg" alt="workflow-image-1" />
-                        <img src="assets/images/wl2.jpg" alt="workflow-image-2" />
-                        <img src="assets/images/wl3.jpg" alt="workflow-image-3" />
-
+                  <div class="col-md-6 left">
+                    <!-- Mini Carousel -->
+                    <section class="notes" id="notes">
+                      <div class="step-item step-1" id="stepID-1">
+          
+                          <div class="step-desc text-center">
+                              <h4 class="step-title">Step 1</h4>
+                              <span class="description"> Dev nhận task từ leader (or PM) </span>
+                          </div>
+                      </div>
+                      <div class="step-item step-2" id="stepID-2">
+                          <div class="step-desc text-center">
+                              <h4 class="step-title">Step 2</h4>
+                              <span class="description"> Chưa clear thì QA or confirm </span>
+                          </div>
+                      </div>
+                      <div class="step-item step-3" id="stepID-3">
+                          <div class="step-desc text-center">
+                              <h4 class="step-title">Step 3</h4>
+                              <span class="description"></span> Clear rồi thì sẽ start làm (báo trước với PM là khoảng bao giờ sẽ xong) </span>
+                          </div>
+                      </div>
+                      <div class="step-item step-4" id="stepID-4">
+                          <div class="step-desc text-center">
+                              <h4 class="step-title">Step 4</h4>
+                              <span class="description">
+                        Trong quá trình làm daily report đẩy đủ, có issue gì không tự giải
+                        quyết được or giải quyết tốn time phải raise sớm </span>
+                          </div>
+                      </div>
+                      <div class="step-item step-5" id="stepID-5">
+                          <div class="step-desc text-center">
+                              <h4 class="step-title">Step 5</h4>
+                              <span class="description">
+                        Làm xong sẽ deploy code code lên server (có tutorial deploy chỉ
+                        cần làm theo là OK ) báo tester test phần đã code xong </span
+                      >
                     </div>
+                  </div>
+                  <div class="step-item step-6" id="stepID-6">
+              
+                    <div class="step-desc text-center">
+                      <h4 class="step-title">Step 6</h4>
+                      <span class="description">Tester test ra bug sẽ fix</span>
+                          </div>
+                      </div>
+                      <div class="step-item step-7" id="stepID-7">
+                          <div class="step-desc text-center">
+                              <h4 class="step-title">Step 7</h4>
+                              <span class="description">Tester bên mình báo OK sẽ report khách hàng, done task</span>
+                          </div>
+                      </div>
+                      <div class="step-item step-8" id="stepID-8">
+                          <div class="step-desc text-center">
+                              <h4 class="step-title">Thanh You!</h4>
+                              <span class="description"></span>
+                          </div>
+                      </div>
+                  </section>
+                    <!--  -->
+                  </div>
                     <div class="col-md-6 right" data-aos="fade-down" data-aos-duration="5000">
                         <div class="logo toggle">
                             <img class="d-none d-lg-block" src="https://gotechjsc.com/wp-content/themes/go-tech/assets/images/logo.png" alt="logo" />
                             <img class="d-lg-none" src="https://gotechjsc.com/wp-content/themes/go-tech/assets/images/logo-mb.png" alt="logo mobile" />
                         </div>
-                        <ul>
-                            <li style="--i: 0" id="1" class="hover-this">
+                        <ul class="circle-item">
+                            <li style="--i: 0" id="1" class="hover-this" >
                                 <a href="javascript:void(0)" class="circle-a" data-slide="1">Step 1</a>
                             </li>
-                            <li style="--i: 1" id="2" class="hover-this">
+                            <li style="--i: 1" id="2" class="hover-this" >
                                 <a href="javascript:void(0)" class="circle-a" data-slide="2">Step 2</a>
                             </li>
-                            <li style="--i: 2" id="3" class="hover-this">
+                            <li style="--i: 2" id="3" class="hover-this" >
                                 <a href="javascript:void(0)" class="circle-a" data-slide="3">Step 3</a>
                             </li>
-                            <li style="--i: 3" id="4" class="hover-this">
+                            <li style="--i: 3" id="4" class="hover-this" >
                                 <a href="javascript:void(0)" class="circle-a" data-slide="4">Step 4</a>
                             </li>
-                            <li style="--i: 4" id="5" class="hover-this">
+                            <li style="--i: 4" id="5" class="hover-this" >
                                 <a href="javascript:void(0)" class="circle-a" data-slide="5">Step 5</a>
                             </li>
-                            <li style="--i: 5" id="6" class="hover-this">
+                            <li style="--i: 5" id="6" class="hover-this" >
                                 <a href="javascript:void(0)" class="circle-a" data-slide="6">Step 6</a>
                             </li>
-                            <li style="--i: 6" id="7" class="hover-this">
+                            <li style="--i: 6" id="7" class="hover-this" >
                                 <a href="javascript:void(0)" class="circle-a" data-slide="7">Step 7</a>
                             </li>
-                            <li style="--i: 7" id="8" class="hover-this">
+                            <li style="--i: 7" id="8" class="hover-this" >
                                 <a href="javascript:void(0)" class="circle-a" data-slide="7">Thank you</a>
                             </li>
                             <div class="cursor"></div>
@@ -176,74 +230,61 @@
         <!-- carousel start -->
         <section class="carousel" id="carousel">
             <div class="step-item step-1">
-                <div class="step-img">
-                    <img src="assets/images/people.jpg" alt="people" />
-                    <div class="home-ribbon">
-                        <svg width="17" height="82" viewBox="0 0 17 82" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6.66699 7.04883L10.5573 81.2806" stroke="black" stroke-width="3"/>
-                                <circle cx="6.6674" cy="7.04928" r="5.69447" transform="rotate(-3 6.6674 7.04928)" fill="#96D962" stroke="black"/>
-                            </svg>
-                        <div class="mark-ribbon mark-ribbon--green">
-                            <strong>Get task</strong>
-                        </div>
+                <div class="step-desc text-center">
+                  <div class="home-ribbon">
+                    <svg width="17" height="82" viewBox="0 0 17 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.66699 7.04883L10.5573 81.2806" stroke="black" stroke-width="3"/>
+                            <circle cx="6.6674" cy="7.04928" r="5.69447" transform="rotate(-3 6.6674 7.04928)" fill="#96D962" stroke="black"/>
+                        </svg>
+                    <div class="mark-ribbon mark-ribbon--green">
+                        <strong>Get task</strong>
                     </div>
                 </div>
-
-                <div class="step-desc text-center">
                     <h4 class="step-title">Step 1</h4>
                     <span class="description"> Dev nhận task từ leader (or PM) </span>
                 </div>
             </div>
             <div class="step-item step-2">
-                <div class="step-img">
-                    <img src="assets/images/people.jpg" alt="people" />
-                    <div class="home-ribbon">
-                        <svg width="17" height="82" viewBox="0 0 17 82" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6.66699 7.04883L10.5573 81.2806" stroke="black" stroke-width="3"/>
-                                <circle cx="6.6674" cy="7.04928" r="5.69447" transform="rotate(-3 6.6674 7.04928)" fill="#96D962" stroke="black"/>
-                            </svg>
-                        <div class="mark-ribbon mark-ribbon--green">
-                            <strong>QA or confirm</strong>
-                        </div>
+                <div class="step-desc text-center">
+                  <div class="home-ribbon">
+                    <svg width="17" height="82" viewBox="0 0 17 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.66699 7.04883L10.5573 81.2806" stroke="black" stroke-width="3"/>
+                            <circle cx="6.6674" cy="7.04928" r="5.69447" transform="rotate(-3 6.6674 7.04928)" fill="#96D962" stroke="black"/>
+                        </svg>
+                    <div class="mark-ribbon mark-ribbon--green">
+                        <strong>QA or confirm</strong>
                     </div>
                 </div>
-                <div class="step-desc text-center">
                     <h4 class="step-title">Step 2</h4>
                     <span class="description"> Chưa clear thì QA or confirm </span>
                 </div>
             </div>
             <div class="step-item step-3">
-                <div class="step-img">
-                    <img src="assets/images/people.jpg" alt="people" />
-                    <div class="home-ribbon">
-                        <svg width="17" height="82" viewBox="0 0 17 82" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6.66699 7.04883L10.5573 81.2806" stroke="black" stroke-width="3"/>
-                                <circle cx="6.6674" cy="7.04928" r="5.69447" transform="rotate(-3 6.6674 7.04928)" fill="#96D962" stroke="black"/>
-                            </svg>
-                        <div class="mark-ribbon mark-ribbon--green">
-                            <strong>Start</strong>
-                        </div>
+                <div class="step-desc text-center">
+                  <div class="home-ribbon">
+                    <svg width="17" height="82" viewBox="0 0 17 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.66699 7.04883L10.5573 81.2806" stroke="black" stroke-width="3"/>
+                            <circle cx="6.6674" cy="7.04928" r="5.69447" transform="rotate(-3 6.6674 7.04928)" fill="#96D962" stroke="black"/>
+                        </svg>
+                    <div class="mark-ribbon mark-ribbon--green">
+                        <strong>Start</strong>
                     </div>
                 </div>
-                <div class="step-desc text-center">
                     <h4 class="step-title">Step 3</h4>
                     <span class="description"></span> Clear rồi thì sẽ start làm (báo trước với PM là khoảng bao giờ sẽ xong) </span>
                 </div>
             </div>
             <div class="step-item step-4">
-                <div class="step-img">
-                    <img src="assets/images/people.jpg" alt="people" />
-                    <div class="home-ribbon">
-                        <svg width="17" height="82" viewBox="0 0 17 82" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6.66699 7.04883L10.5573 81.2806" stroke="black" stroke-width="3"/>
-                                <circle cx="6.6674" cy="7.04928" r="5.69447" transform="rotate(-3 6.6674 7.04928)" fill="#96D962" stroke="black"/>
-                            </svg>
-                        <div class="mark-ribbon mark-ribbon--green">
-                            <strong>Daily report</strong>
-                        </div>
+                <div class="step-desc text-center">
+                  <div class="home-ribbon">
+                    <svg width="17" height="82" viewBox="0 0 17 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.66699 7.04883L10.5573 81.2806" stroke="black" stroke-width="3"/>
+                            <circle cx="6.6674" cy="7.04928" r="5.69447" transform="rotate(-3 6.6674 7.04928)" fill="#96D962" stroke="black"/>
+                        </svg>
+                    <div class="mark-ribbon mark-ribbon--green">
+                        <strong>Daily report</strong>
                     </div>
                 </div>
-                <div class="step-desc text-center">
                     <h4 class="step-title">Step 4</h4>
                     <span class="description">
               Trong quá trình làm daily report đẩy đủ, có issue gì không tự giải
@@ -251,19 +292,16 @@
                 </div>
             </div>
             <div class="step-item step-5">
-                <div class="step-img">
-                    <img src="assets/images/people.jpg" alt="people" />
-                    <div class="home-ribbon">
-                        <svg width="17" height="82" viewBox="0 0 17 82" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6.66699 7.04883L10.5573 81.2806" stroke="black" stroke-width="3"/>
-                                <circle cx="6.6674" cy="7.04928" r="5.69447" transform="rotate(-3 6.6674 7.04928)" fill="#96D962" stroke="black"/>
-                            </svg>
-                        <div class="mark-ribbon mark-ribbon--green">
-                            <strong>Deploy and test</strong>
-                        </div>
+                <div class="step-desc text-center">
+                  <div class="home-ribbon">
+                    <svg width="17" height="82" viewBox="0 0 17 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.66699 7.04883L10.5573 81.2806" stroke="black" stroke-width="3"/>
+                            <circle cx="6.6674" cy="7.04928" r="5.69447" transform="rotate(-3 6.6674 7.04928)" fill="#96D962" stroke="black"/>
+                        </svg>
+                    <div class="mark-ribbon mark-ribbon--green">
+                        <strong>Deploy and test</strong>
                     </div>
                 </div>
-                <div class="step-desc text-center">
                     <h4 class="step-title">Step 5</h4>
                     <span class="description">
               Làm xong sẽ deploy code code lên server (có tutorial deploy chỉ
@@ -272,37 +310,31 @@
           </div>
         </div>
         <div class="step-item step-6">
-          <div class="step-img">
-            <img  src="assets/images/people.jpg" alt="people" />
-            <div class="home-ribbon">
-                        <svg width="17" height="82" viewBox="0 0 17 82" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6.66699 7.04883L10.5573 81.2806" stroke="black" stroke-width="3"/>
-                                <circle cx="6.6674" cy="7.04928" r="5.69447" transform="rotate(-3 6.6674 7.04928)" fill="#96D962" stroke="black"/>
-                            </svg>
-                        <div class="mark-ribbon mark-ribbon--green">
-                            <strong>Fix bug</strong>
-                        </div>
-                    </div>
-          </div>
           <div class="step-desc text-center">
+            <div class="home-ribbon">
+              <svg width="17" height="82" viewBox="0 0 17 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.66699 7.04883L10.5573 81.2806" stroke="black" stroke-width="3"/>
+                      <circle cx="6.6674" cy="7.04928" r="5.69447" transform="rotate(-3 6.6674 7.04928)" fill="#96D962" stroke="black"/>
+                  </svg>
+              <div class="mark-ribbon mark-ribbon--green">
+                  <strong>Fix bug</strong>
+              </div>
+          </div>
             <h4 class="step-title">Step 6</h4>
             <span class="description">Tester test ra bug sẽ fix</span>
                 </div>
             </div>
             <div class="step-item step-7">
-                <div class="step-img">
-                    <img src="assets/images/people.jpg" alt="people" />
-                    <div class="home-ribbon">
-                        <svg width="17" height="82" viewBox="0 0 17 82" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6.66699 7.04883L10.5573 81.2806" stroke="black" stroke-width="3"/>
-                                <circle cx="6.6674" cy="7.04928" r="5.69447" transform="rotate(-3 6.6674 7.04928)" fill="#96D962" stroke="black"/>
-                            </svg>
-                        <div class="mark-ribbon mark-ribbon--green">
-                            <strong>Done task</strong>
-                        </div>
+                <div class="step-desc text-center">
+                  <div class="home-ribbon">
+                    <svg width="17" height="82" viewBox="0 0 17 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.66699 7.04883L10.5573 81.2806" stroke="black" stroke-width="3"/>
+                            <circle cx="6.6674" cy="7.04928" r="5.69447" transform="rotate(-3 6.6674 7.04928)" fill="#96D962" stroke="black"/>
+                        </svg>
+                    <div class="mark-ribbon mark-ribbon--green">
+                        <strong>Done task</strong>
                     </div>
                 </div>
-                <div class="step-desc text-center">
                     <h4 class="step-title">Step 7</h4>
                     <span class="description">Tester bên mình báo OK sẽ report khách hàng, done task</span>
                 </div>
