@@ -174,6 +174,18 @@ section.flow-body .left img:nth-child(2) {
   border-right: 15px solid transparent;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  section.flow-body .right li {
+    animation: none !important;
+  }
+  section.flow-body .right.active li {
+    transform: rotate(calc(360deg / -8 * var(--i)));
+  }
+  section.flow-body .right li a {
+    transform: rotate(calc(360deg / 8 * var(--i)));
+  }
+}
+
 @media screen and (max-width: 768px) {
   section.flow-body .right li {
     left: 8%;
