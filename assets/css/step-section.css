@@ -185,7 +185,7 @@ section.flow-body .left img:nth-child(2) {
     display: none;
   }
   section.flow-body .right li {
-    animation: none;
+    animation: none !important;
   }
   section.flow-body .right.active li {
     transform: rotate(calc(360deg / -8 * var(--i)));
