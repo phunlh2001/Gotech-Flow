@@ -193,9 +193,6 @@ section.flow-body .left img:nth-child(2) {
   section.flow-body .right li a {
     transform: rotate(calc(360deg / 8 * var(--i)));
   }
-  section.flow-body {
-    height: 150vh;
-  }
 }
 
 @media screen and (max-width: 577px) {
@@ -233,7 +230,7 @@ section.flow-body .left img:nth-child(2) {
     text-align: center;
   }
   section.flow-body .right li {
-    animation: none;
+    animation: none !important;
   }
   section.flow-body .right.active li {
     transform: rotate(calc(360deg / -8 * var(--i)));
