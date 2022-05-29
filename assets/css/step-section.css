@@ -9,7 +9,7 @@ section.flow-body .container .row {
 
 section.flow-body {
   background-color: var(--blue-clr);
-  height: 100vh;
+  height: 150vh;
   display: flex;
   align-items: center;
 }
