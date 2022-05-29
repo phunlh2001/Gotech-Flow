@@ -229,6 +229,15 @@ section.flow-body .left img:nth-child(2) {
     font-size: 1rem;
     text-align: center;
   }
+  section.flow-body .right li {
+    animation: none;
+  }
+  section.flow-body .right.active li {
+    transform: rotate(calc(360deg / -8 * var(--i)));
+  }
+  section.flow-body .right li a {
+    transform: rotate(calc(360deg / 8 * var(--i)));
+  }
 }
 
 #canvas {
