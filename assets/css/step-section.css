@@ -184,6 +184,15 @@ section.flow-body .left img:nth-child(2) {
   .hover-this:hover ~ .cursor {
     display: none;
   }
+  section.flow-body .right li {
+    animation: none;
+  }
+  section.flow-body .right.active li {
+    transform: rotate(calc(360deg / -8 * var(--i)));
+  }
+  section.flow-body .right li a {
+    transform: rotate(calc(360deg / 8 * var(--i)));
+  }
 }
 
 @media screen and (max-width: 577px) {
