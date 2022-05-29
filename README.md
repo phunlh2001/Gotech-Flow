@@ -1,3 +1,3 @@
 # GOTECH FLOW PROCESS
 
-[Live](https://phunlhce150297.github.io/Gotech-Flow/)
+[Demo](https://phunlhce150297.github.io/Gotech-Flow/)
